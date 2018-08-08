@@ -22,8 +22,8 @@ feature 'visit homepage' do
 
 		visit root_path
 
-		expect(page).to have_css('h4', text: lunch.title)
-		expect(page).to have_css('p', text: lunch.recipe_types)
-		expect(page).to have_css('p', text: lunch.cuisines)
+		expect(page).to have_css('h3', text: lunch.title)
+		expect(page).to have_css('p', text: lunch.recipe_type)
+		expect(page).to have_css('p', text: lunch.cuisine)
   end
 end
